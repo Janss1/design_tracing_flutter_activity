@@ -79,9 +79,10 @@ class WaterTrackerPage extends StatelessWidget {
 
 
             const SizedBox(
-              height: 60,
+              height: 65,
               width: 450,
               child: Card(
+
                 color: Color(0xFFD9E9FD),
                 child: Center(
                   child: Text(
@@ -97,8 +98,9 @@ class WaterTrackerPage extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 10),
-            const SizedBox(height: 60,
+            const SizedBox(height: 5),
+            const SizedBox(
+              height: 65,
               width: 450,
               child: Card(
                 color: Color(0xFFD9E9FD),
