@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class WaterTrackerPage extends StatelessWidget {
   const WaterTrackerPage({super.key});
 
@@ -13,46 +12,40 @@ class WaterTrackerPage extends StatelessWidget {
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 59, 100, 200),
         foregroundColor: Colors.white,
-
       ),
       body: Center(
-        
+
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
-              Icons.water_drop,
-              color: Color(0xFF3F9DFC),
-              size: 100,
-              ),
-              
+            const Icon(Icons.water_drop,
+             color: Color(0xFF3F9DFC),
+              size: 100),
+
             const Text(
               'Stay hydrated!',
-              style: TextStyle(fontSize: 44, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 44,
+               fontWeight: FontWeight.bold),
             ),
 
             const Text(
               'Build a healthy daily habit',
-              style: TextStyle(fontSize: 24, color: Colors.grey),
+              style: TextStyle(fontSize: 24,
+               color: Colors.grey),
             ),
 
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 20),
               margin: const EdgeInsets.all(34),
-              
+
               decoration: BoxDecoration(
                 color: const Color(0xFEFEFEFE),
-                border: Border.all(
-                  width: 2,
-                  color: const Color(0xFEFEFEFE)
-                 
-                ),
+                border: Border.all(width: 2,
+                 color: const Color(0xFEFEFEFE)),
 
                 borderRadius: BorderRadius.circular(12),
-                
-                
               ),
-              
+
               child: Column(
                 children: [
                   const Text(
@@ -69,7 +62,7 @@ class WaterTrackerPage extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 100,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFF3F9DFC),
+                      color: Color(0xFF2b4bb9),
                     ),
                   ),
                   const Text(
@@ -82,18 +75,59 @@ class WaterTrackerPage extends StatelessWidget {
                   ),
                 ],
               ),
-
             ),
 
 
+            const SizedBox(
+              height: 60,
+              width: 450,
+              child: Card(
+                color: Color(0xFFD9E9FD),
+                child: Center(
+                  child: Text(
+                    'Drink water regularly',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Color(0xFF2b4bb9),
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+            ),
 
+            const SizedBox(height: 10),
+            const SizedBox(height: 60,
+              width: 450,
+              child: Card(
+                color: Color(0xFFD9E9FD),
+                child: Center(
+                  child: Text(
+                    'Bring your water bottle',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Color(0xFF2b4bb9),
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+            ),
+
+            const SizedBox(height: 10),
+            const Text(
+              'Every glass counts!',
+              style: TextStyle(
+                fontSize: 20,
+                color: Color(0xFF4B576A),
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
-
-
-
-
